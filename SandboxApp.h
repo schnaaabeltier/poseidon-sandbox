@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Poseidon/core/Application.h"
+#include "Poseidon/Poseidon.h"
 
 class SandboxApp : public poseidon::Application {
 public:
