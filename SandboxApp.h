@@ -4,6 +4,6 @@
 
 class SandboxApp : public poseidon::Application {
 public:
-    void run() override;
+    SandboxApp();
 };
 

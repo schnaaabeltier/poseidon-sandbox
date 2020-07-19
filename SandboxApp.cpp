@@ -2,20 +2,12 @@
 
 #include "Poseidon/Poseidon.h"
 
-void SandboxApp::run() {
-    while(true) {
-        PS_CORE_INFO("TestLog");
-    }
+#include <iostream>
+
+SandboxApp::SandboxApp() : poseidon::Application(1920, 1080, "SandboxApp") {
+    PS_APP_INFO("Creating sandbox app.");
 }
 
 poseidon::Application *poseidon::createApplication(int argc, char **argv) {
     return new SandboxApp();
-}
-
-poseidon::Logger *poseidon::createClientLogger() {
-    return new poseidon::SpdConsoleLogger("SandboxApp");
-}
-
-poseidon::Logger *poseidon::createCoreLogger() {
-    return new poseidon::SpdConsoleLogger("CORE");
 }
