@@ -4,6 +4,6 @@
 
 class SandboxApp : public poseidon::Application {
 public:
-    SandboxApp();
+    SandboxApp(const std::string& assetsBasePath);
 };
 

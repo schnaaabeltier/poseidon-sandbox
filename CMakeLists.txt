@@ -9,4 +9,4 @@ add_executable(poseidon_sandbox
         SandboxApp.h
         SandboxApp.cpp)
 
-target_link_libraries(poseidon_sandbox Poseidon::core)
+target_link_libraries(poseidon_sandbox Poseidon::core Poseidon::gui)
